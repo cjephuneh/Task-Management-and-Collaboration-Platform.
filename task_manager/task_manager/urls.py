@@ -22,20 +22,20 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     # Include URLs from the Authentication App
-    path('api/auth/', include('authentication.urls')),
+    path('api/auth/', include('Authentication.urls')),
     
     # Include URLs from the Tasks App
-    path('api/tasks/', include('tasks.urls')),
+    # path('api/tasks/', include('tasks.urls')),
     
-    # Include URLs from the Projects App
-    path('api/projects/', include('projects.urls')),
+    # # Include URLs from the Projects App
+    # path('api/projects/', include('Projects.urls')),
     
-    # Include URLs from the Collaboration App
-    path('api/collaboration/', include('collaboration.urls')),
+    # # Include URLs from the Collaboration App
+    # path('api/collaboration/', include('Collaboration.urls')),
     
-    # Include URLs from the File Management App
-    path('api/files/', include('file_management.urls')),
+    # # Include URLs from the File Management App
+    # path('api/files/', include('File_Management.urls')),
     
-    # Include URLs from the Dashboard App
-    path('api/dashboard/', include('dashboard.urls')),
+    # # Include URLs from the Dashboard App
+    # path('api/dashboard/', include('Dashboard.urls')),
 ]
