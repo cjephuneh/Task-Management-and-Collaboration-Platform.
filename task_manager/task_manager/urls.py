@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     # Include URLs from the Authentication App
-    path('api/auth/', include('Authentication.urls')),
+    path('api/auth/', include('Authentication.urls', namespace='authentication')),
     
     # Include URLs from the Tasks App
     # path('api/tasks/', include('tasks.urls')),
