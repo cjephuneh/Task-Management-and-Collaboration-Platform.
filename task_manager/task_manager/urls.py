@@ -25,7 +25,7 @@ urlpatterns = [
     path('api/auth/', include('Authentication.urls', namespace='authentication')),
     
     # Include URLs from the Tasks App
-    # path('api/tasks/', include('tasks.urls')),
+    # path('api/tasks/', include('tasks.urls', namespace='tasks')),
     
     # # Include URLs from the Projects App
     # path('api/projects/', include('Projects.urls')),
