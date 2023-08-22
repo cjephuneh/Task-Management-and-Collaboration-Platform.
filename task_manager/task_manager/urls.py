@@ -22,10 +22,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     # Include URLs from the Authentication App
-    path('api/auth/', include('Authentication.urls', namespace='authentication')),
+    path('api/auth/', include('Authentication.urls')),
     
     # Include URLs from the Tasks App
-    path('api/tasks/', include('tasks.urls', namespace='tasks')),
+    path('api/tasks/', include('tasks.urls')),
     
     # # Include URLs from the Projects App
     # path('api/projects/', include('Projects.urls')),

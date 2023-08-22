@@ -12,9 +12,9 @@ class TaskModel(models.Model):
     status = models.IntegerField(default=0)
     attachment = models.FileField(upload_to='attachments/', null=True, blank=True)
     tags = models.CharField(max_length=255, null=True, blank=True)
-    project = models.ForeignKey('Projects.ProjectModel', on_delete=models.CASCADE, null=True, blank=True)
-    assigned_to = models.ForeignKey('Authentication.UserModel', on_delete=models.CASCADE, null=True, blank=True)
-    created_by = models.ForeignKey('Authentication.UserModel', on_delete=models.CASCADE, related_name='created_by', null=True, blank=True)
+    # project = models.ForeignKey('Projects.ProjectModel', on_delete=models.CASCADE, null=True, blank=True)
+    # assigned_to = models.ForeignKey('Authentication.UserModel', on_delete=models.CASCADE, null=True, blank=True)
+    # created_by = models.ForeignKey('Authentication.UserModel', on_delete=models.CASCADE, related_name='created_by', null=True, blank=True)
     
     def __str__(self):
         return self.title
