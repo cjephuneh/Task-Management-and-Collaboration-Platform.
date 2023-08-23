@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Authentication',
     'rest_framework',
     'Collaboration'
+    'corsheaders'
    
 ]
 
@@ -116,6 +117,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CORS_ALLOWED_ORIGINS = (
+    'http://localhost:3000',
+    
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
